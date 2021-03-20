@@ -83,7 +83,7 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-<<: *default
+  <<: *default
   database: myapp_development
   username: diego
   password: hogaru
