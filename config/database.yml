@@ -84,6 +84,7 @@ test:
 #
 production:
   <<: *default
-  database: myapp_development
-  username: diego
-  password: hogaru
+  database: d8bc4lt4g796re
+  username: devnomnbbppaxs
+  password: 108ae1d866d4e83fe1d734ff755d915047bfbe520e8ebc10a6930553555bc9cf
+  port: 5432
