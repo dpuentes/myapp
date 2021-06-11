@@ -8,7 +8,7 @@ class User < ApplicationRecord
 						uniqueness: { case_sensitive: false },
 						uniqueness: true
 	has_secure_password
-	validates :password, presence: true, length: { minimum: 6 }
+	validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
 
 	#Devuelve el resumen de hash de la cadena dada.
 	def User.digest(string)
