@@ -71,12 +71,13 @@ class User < ApplicationRecord
 
 	private
 
-	# Converts email to all lower-case.
+	# Convierte el correo electrónico en minúsculas.
 	def downcase_email
 		self.email = email.downcase
 	end
 
 	# Creates and assigns the activation token and digest.
+	# Crea y asigna el token de activación y el token digest.
 	def create_activation_digest
 		self.activation_token = User.new_token
 		self.activation_digest = User.digest(activation_token)
