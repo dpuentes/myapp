@@ -81,6 +81,12 @@ class User < ApplicationRecord
 		UserMailer.password_reset(self).deliver_now
 	end
 	
+	# Returns true if a password reset has expired.
+	# Devuelve verdadero si ha expirado un restablecimiento de contraseña.
+	def password_reset_expired?
+		reset_sent_at < 2.hours.ago
+	end
+
 	private
 
 	# Convierte el correo electrónico en minúsculas.
