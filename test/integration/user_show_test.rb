@@ -1,3 +1,8 @@
+=begin
+     
+ rescue => exception
+     
+ end
 require 'test_helper'
 
 class UsersShowTest < ActionDispatch::IntegrationTest
@@ -19,3 +24,4 @@ class UsersShowTest < ActionDispatch::IntegrationTest
         assert_template "users/show"
     end
 end
+=end
